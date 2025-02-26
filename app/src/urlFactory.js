@@ -6,8 +6,8 @@ if (window.location.hostname === 'test.mediasoup.org') {
 	protooPort = 4444;
 }
 
-const hostname = window.location.hostname;
-const protocol = 'ws';
+const hostname = 'awsapi-liveclass-dev.redikclassroom.com';
+const protocol = 'wss';
 
 // const hostname = 'v3demo.mediasoup.org'
 // const protocol = 'ws'
