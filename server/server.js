@@ -470,6 +470,9 @@ async function runHttpsServer()
 	{
 		httpsServer.listen(
 			Number(config.https.listenPort), config.https.listenIp, resolve);
+
+		// eslint-disable-next-line no-console
+		console.log('SERVER IS RUNNING ON PORT %d', config.https.listenPort);		
 	});
 }
 

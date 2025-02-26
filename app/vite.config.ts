@@ -19,7 +19,7 @@ try {
 } catch (err) {
   // ignore file not found
 }
-const port = Number(process.env.VITE_LISTEN_PORT) || 3000
+const port = Number(process.env.VITE_LISTEN_PORT) || 4000
 const https = cert && key ? { cert, key } : undefined
 
 export default defineConfig({
@@ -116,7 +116,8 @@ async function runDev() {
 function open(query: string) {
   const protocol = https ? 'https' : 'http'
   const url = `${protocol}://${host}:${port}/?${query}`
-  openBrowser(url)
+  console.log(url);
+  // openBrowser(url)
 }
 
 function readTls(v: string) {
