@@ -31,6 +31,7 @@ export default defineConfig({
     host,
     port,
     https,
+    allowedHosts: ["awsliveclass-dev.redikclassroom.com"]
   },
 })
 
